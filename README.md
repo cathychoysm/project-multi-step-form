@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# Front-End Project - Multi-Step Form
+This project is a frontend challenge from FrontendPro.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Language: TypeScript
 
-## Available Scripts
+- Framework: React.js
 
-In the project directory, you can run:
+- Library: Material UI
 
-### `yarn start`
+The details of this challenge are as below:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Challenge link: https://www.frontendpro.dev/frontend-coding-challenges/multi-step-form-lyFZYpe2Uxc8Ng4ueYud
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Multi-step Form](./desktop-cover.png)
 
-### `yarn test`
+**Challenge Title**
+Multi-step Form
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Challenge Description**
+In this frontend challenge, you'll build a Multi-step Form. This challenge is perfect for you if you've been learning CSS and JavaScript and are looking to practice what you've learned by building something new and beginner-friendly.
 
-### `yarn build`
+**Difficulty Level**
+Beginner
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Tags**
+FRONTEND
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Learning**
+In this frontend challenge, you'll learn how to build interactive UI components using CSS and JavaScript. You will learn to use CSS flexbox to create responsive UI components. Additionally, you will also learn to handle the open/close functionality of a modal. You're going to love it!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Requirements**
 
-### `yarn eject`
+- The Multi-step Form should be triggered by a button, and it should appear as a modal overlay on top of the current page.
+- The modal should include a rating scale that allows users to rate a product on a scale of 1 to 10.
+- Users should be able to select a rating by clicking on a number in the scale.
+- The modal should close when the user submits their feedback.
+- The modal should get closed by clicking on a “Cancel” button or by clicking outside of the modal.
+- The component should be responsive and display correctly on different screen sizes.
+- Make this landing page look as close to the design as possible.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+I hope you'll enjoy building this challenge.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to share your solution on the website or on social media and [tag us](https://twitter.com/FrontendProHQ).
