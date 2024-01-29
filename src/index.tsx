@@ -26,9 +26,7 @@ const theme = createTheme({
 		},
 		orange: {
 			main: '#FC6C4C',
-		},
-		white: {
-			main: '#FFFFFF'
+			contrastText: '#FFF'
 		}
 	},
 	typography: {
@@ -56,6 +54,9 @@ const theme = createTheme({
 			ontFamily: 'Poppins',
 			fontSize: "14px",
 			fontWeight: 400
+		},
+		button: {
+			textTransform: 'none'
 		}
 	}
 })

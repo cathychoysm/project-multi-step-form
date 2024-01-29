@@ -4,13 +4,11 @@ declare module '@mui/material/styles' {
 	interface Palette {
 		green?: string | PaletteColor;
 		orange?: string | PaletteColor;
-		white?: string | PaletteColor;
 	}
 
 	interface PaletteOptions {
 		green?: PaletteColorOptions;
 		orange?: PaletteColorOptions;
-		white?: PaletteColorOptions;
 	}
 
 	interface PaletteColor {
@@ -18,6 +16,14 @@ declare module '@mui/material/styles' {
 	}
 
 	interface SimplePaletteColorOptions {
-    darker?: string;
-  }
+		darker?: string;
+	}
+
+}
+
+declare module '@mui/material/Button' {
+	interface ButtonPropsColorOverrides {
+		orange: true;
+		white: true;
+	}
 }
