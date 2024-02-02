@@ -18,12 +18,28 @@ declare module '@mui/material/styles' {
 	interface SimplePaletteColorOptions {
 		darker?: string;
 	}
-
 }
 
 declare module '@mui/material/Button' {
 	interface ButtonPropsColorOverrides {
 		orange: true;
-		white: true;
+	}
+}
+
+declare module '@mui/material/InputBase' {
+	interface InputBasePropsColorOverrides {
+		orange: true;
+	}
+}
+
+declare module '@mui/material/Icon' {
+	interface IconPropsColorOverrides {
+		orange: true;
+	}
+}
+
+declare module '@mui/material/Checkbox' {
+	interface CheckboxPropsColorOverrides {
+		orange
 	}
 }

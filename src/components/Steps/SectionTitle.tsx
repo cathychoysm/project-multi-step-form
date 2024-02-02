@@ -9,7 +9,7 @@ interface SectionTitleProps {
 export default function SectionTitle({ title, description }: SectionTitleProps): ReactElement {
 	return (
 		<>
-			<Typography variant="h2">{ title }</Typography>
+			<Typography variant="h3">{ title }</Typography>
 			<Typography variant="body1" sx={{ color: 'secondary.darker' }}>{ description }</Typography>
 		</>
 	)

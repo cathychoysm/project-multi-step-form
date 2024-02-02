@@ -7,7 +7,7 @@ export default function Headings(): ReactElement {
 			<Typography variant="h1" sx={{ textAlign: 'center' }}>
 				Join our Community of Developers
 			</Typography>
-			<Typography variant="h3" sx={{ textAlign: 'center', marginY: 3 }}>
+			<Typography variant="h4" sx={{ textAlign: 'center', marginY: 3 }}>
 				To join our community and participate in frontend challenges.
 				<br />
 				Please fill out the following form.

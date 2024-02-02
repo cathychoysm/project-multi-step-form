@@ -9,10 +9,26 @@ import {
 } from "@mui/material";
 import type { StepStateProps } from './Form';
 
-export default function ProgressBar({ step, setStep }: StepStateProps): ReactElement {
+export default function ProgressBar({ step, setStep, values, touched, errors }: StepStateProps): ReactElement {
 	const handleStep = (index: number) => () => {
 		setStep(index);
 	};
+
+	const step0Validation = (
+		errors.name === undefined && touched.name === true &&
+		errors.email === undefined && touched.email === true &&
+		errors.phone === undefined && touched.phone === true &&
+		errors.link === undefined && touched.link === true
+	);
+	const step1Validation = (
+		values.skill !== null
+	);
+	const StepsDisabled = [
+		false,
+		!step0Validation,
+		!(step0Validation && step1Validation),
+		!(step0Validation && step1Validation)
+	]
 
 	const StepIconRoot = styled('div')<{
 		ownerState: { completed?: boolean; active?: boolean };
@@ -75,10 +91,10 @@ export default function ProgressBar({ step, setStep }: StepStateProps): ReactEle
 	return (
 		<Stepper nonLinear activeStep={step} sx={stepConnectorStyle}>
 			{
-				[...Array(4)].map((value, index) => {
+				StepsDisabled.map((disabled, index) => {
 					return (
 						<Step key={index} completed={index <= step ? true : false}>
-							<StepButton onClick={handleStep(index)}>
+							<StepButton onClick={handleStep(index)} disabled={disabled}>
 								<StepLabel StepIconComponent={StepIcon} />
 							</StepButton>
 						</Step>
