@@ -10,7 +10,7 @@ export default function Step3({ values, touched, errors }: InputProps) {
 				<Grid item xs={12}>
 					<SectionTitle title="Challenge Preference" description="Please tell us which frontend challenges you would like to participate in." />
 				</Grid>
-				<Grid item xs={6}>
+				<Grid item xs={12} sm={6}>
 					<Field as={FormControlLabel}
 						control={<Checkbox color="orange" sx={{paddingLeft: '12px'}} />}
 						type="checkbox"
@@ -19,7 +19,7 @@ export default function Step3({ values, touched, errors }: InputProps) {
 						name="challenge_preference"
 					/>
 				</Grid>
-				<Grid item xs={6}>
+				<Grid item xs={12} sm={6}>
 					<Field as={FormControlLabel}
 						control={<Checkbox color="orange" sx={{paddingLeft: '12px'}} />}
 						type="checkbox"
@@ -28,7 +28,7 @@ export default function Step3({ values, touched, errors }: InputProps) {
 						name="challenge_preference"
 					/>
 				</Grid>
-				<Grid item xs={6}>
+				<Grid item xs={12} sm={6}>
 					<Field as={FormControlLabel}
 						control={<Checkbox color="orange" sx={{paddingLeft: '12px'}} />}
 						type="checkbox"
@@ -37,7 +37,7 @@ export default function Step3({ values, touched, errors }: InputProps) {
 						name="challenge_preference"
 					/>
 				</Grid>
-				<Grid item xs={6}>
+				<Grid item xs={12} sm={6}>
 					<Field as={FormControlLabel}
 						control={<Checkbox color="orange" sx={{paddingLeft: '12px'}} />}
 						type="checkbox"

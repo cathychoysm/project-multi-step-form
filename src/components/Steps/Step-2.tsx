@@ -28,25 +28,25 @@ export default function Step2({ values, touched, errors }: InputProps) {
 				<Grid item xs={12}>
 					<SectionTitle title="Skill Level" description="Please tell us about your skill level in frontend development." />
 				</Grid>
-				<Grid item xs={6}>
+				<Grid item xs={12} sm={6}>
 					<FormControlLabel
 						value="Beginner"
 						control={<Radio />}
 						label={<Label icon={BeginnerIcon} children="Beginner" />} />
 				</Grid>
-				<Grid item xs={6}>
+				<Grid item xs={12} sm={6}>
 					<FormControlLabel
 						value="Intermediate"
 						control={<Radio />}
 						label={<Label icon={IntermediateIcon} children="Intermediate" />} />
 				</Grid>
-				<Grid item xs={6}>
+				<Grid item xs={12} sm={6}>
 					<FormControlLabel
 						value="Advanced"
 						control={<Radio />}
 						label={<Label icon={AdvancedIcon} children="Advanced" />} />
 				</Grid>
-				<Grid item xs={6}>
+				<Grid item xs={12} sm={6}>
 					<FormControlLabel
 						value="Expert"
 						control={<Radio />}

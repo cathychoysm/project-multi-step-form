@@ -20,7 +20,7 @@ interface TextFieldSetProps {
 
 export default function Step1({ values, touched, errors }: InputProps): ReactElement {
 	const TextFieldSet = ({ name, type, label, placeholder, error, touch }: TextFieldSetProps) => (
-		<Grid item xs={6}>
+		<Grid item xs={12} sm={6}>
 			<FormControl fullWidth>
 				<InputLabel
 					htmlFor="name"

@@ -52,6 +52,11 @@ export default function ProgressBar({ step, setStep, values, touched, errors }: 
 			backgroundColor: '#FC6C4C',
 			color: '#FFF'
 		}),
+		[theme.breakpoints.only('xs')]: {
+			width: '25px',
+			height: '25px',
+			fontSize: '10.5px',
+		}
 	}))
 
 	const StepIcon = (props: StepIconProps) => {
@@ -63,33 +68,33 @@ export default function ProgressBar({ step, setStep, values, touched, errors }: 
 		)
 	}
 
-	const stepConnectorStyle = {
-		width: '544px',
+	const stepperStyle = {
+		width: { xs: '300px', sm: '545px' },
 		// Basic Style
 		"& .MuiStepConnector-line": {
 			borderColor: 'secondary.main',
-			borderTopWidth: '6px',
+			borderTopWidth: {xs: '4px', sm: '6px'},
 			borderRadius: '50px'
 		},
 		// Active and Completed Style
 		"& .Mui-active": {
 			"& .MuiStepConnector-line": {
 				borderColor: 'orange.main',
-				borderTopWidth: '6px',
+				borderTopWidth: {xs: '4px', sm: '6px'},
 				borderRadius: '50px'
 			}
 		},
 		"& .Mui-completed": {
 			"& .MuiStepConnector-line": {
 				borderColor: 'orange.main',
-				borderTopWidth: '6px',
+				borderTopWidth: {xs: '4px', sm: '6px'},
 				borderRadius: '50px'
 			}
 		},
 	}
 
 	return (
-		<Stepper nonLinear activeStep={step} sx={stepConnectorStyle}>
+		<Stepper nonLinear activeStep={step} sx={stepperStyle}>
 			{
 				StepsDisabled.map((disabled, index) => {
 					return (

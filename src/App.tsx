@@ -7,7 +7,7 @@ import Form from './components/Form/Form';
 function App(): ReactElement {
 	return (
 		<Box sx={{ bgcolor: "green.light", minHeight: "100vh" }}>
-			<Container sx={{ height: "100vh" }}>
+			<Container sx={{ height: {sm: "100vh"}, paddingY: "30px" }}>
 				<Stack direction="column" alignItems="center" justifyContent="center" sx={{ height: "100%" }}>
 					<Headings />
 					<Form />

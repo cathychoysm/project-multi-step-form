@@ -57,10 +57,10 @@ export default function Form(): ReactElement {
 
 	const formStyle = {
 		backgroundColor: '#FFF',
-		maxWidth: "610px",
-		minHeight: "495px",
+		width: {xs: '300px', sm: "610px"},
+		height: {xs: "600px", sm: "495px"},
 		borderRadius: "16px",
-		padding: "30px",
+		padding: {xs: '20px', sm: "30px"},
 		justifyContent: 'space-around',
 		alignItems: 'center'
 	}
@@ -93,9 +93,9 @@ export default function Form(): ReactElement {
 				<FormikForm>
 					<Stack sx={formStyle}>
 						{ step !== 4 && <ProgressBar step={step} setStep={setStep} values={values} touched={touched} errors={errors} isValid={isValid}/> }
-						{ step !== 4 && <Divider flexItem variant='middle' sx={{ borderColor: 'secondary.main', width: 580 }} />}
+						{ step !== 4 && <Divider flexItem variant='middle' sx={{ borderColor: 'secondary.main', width: {xs: 270, sm: 580} }} />}
 						<Steps values={values} touched={touched} errors={errors} />
-						{ step !== 4 && <Divider flexItem variant='middle' sx={{ borderColor: 'secondary.main', width: 580 }} />}
+						{ step !== 4 && <Divider flexItem variant='middle' sx={{ borderColor: 'secondary.main', width: {xs: 270, sm: 580} }} />}
 						{ step !== 4 && <BackandNext step={step} setStep={setStep} submitForm={submitForm} values={values} touched={touched} errors={errors} isValid={isValid}/>}
 					</Stack>
 				</FormikForm>

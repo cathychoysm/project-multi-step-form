@@ -31,48 +31,18 @@ const theme = createTheme({
 	},
 	typography: {
 		fontFamily: 'Poppins',
-		h1: {
-			fontFamily: 'Merriweather',
-			fontSize: "32px",
-		},
-		h2: {
-			fontFamily: 'Poppins',
-			fontSize: "24px",
-			fontWeight: 600
-		},
-		h3: {
-			fontFamily: 'Poppins',
-			fontSize: "24px",
-			fontWeight: 500
-		},
-		h4: {
-			fontFamily: 'Poppins',
-			fontSize: "18px",
-			fontWeight: 400
-		},
-		subtitle1: {
-			fontFamily: 'Poppins',
-			fontSize: "14px",
-			fontWeight: 500
-		},
-		subtitle2: {
-			fontFamily: 'Poppins',
-			fontSize: "12px",
-			fontWeight: 500
-		},
-		body1: {
-			ontFamily: 'Poppins',
-			fontSize: "14px",
-			fontWeight: 400
-		},
-		body2: {
-			ontFamily: 'Poppins',
-			fontSize: "12px",
-			fontWeight: 400
-		},
 		button: {
 			textTransform: 'none'
 		}
+	},
+	breakpoints: {
+		values: {
+      xs: 0,
+      sm: 640,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
 	},
 	components: {
 		MuiTextField: {
@@ -119,7 +89,8 @@ const theme = createTheme({
 					borderRadius: '10px',
 					width: '100%',
 					height: '69px',
-					[`&.MuiFormControlLabel-root:has(.Mui-checked)`] : {
+					marginLeft: 0,
+					[`&.MuiFormControlLabel-root:has(.Mui-checked)`]: {
 						border: '1px solid #FC6C4C',
 					}
 				}
@@ -137,6 +108,71 @@ const theme = createTheme({
 		}
 	}
 })
+
+theme.typography.h1 = {
+	fontFamily: 'Merriweather',
+	fontSize: "32px",
+	[theme.breakpoints.only('xs')]: {
+		fontSize: '24px',
+	},
+};
+theme.typography.h2 = {
+	fontFamily: 'Poppins',
+	fontSize: "24px",
+	fontWeight: 600,
+	[theme.breakpoints.only('xs')]: {
+		fontSize: '18px',
+	},
+};
+theme.typography.h3 = {
+	fontFamily: 'Poppins',
+	fontSize: "24px",
+	fontWeight: 500,
+	[theme.breakpoints.only('xs')]: {
+		fontSize: '18px',
+	},
+};
+theme.typography.h4 = {
+	fontFamily: 'Poppins',
+	fontSize: "18px",
+	fontWeight: 400,
+	[theme.breakpoints.only('xs')]: {
+		fontSize: '13.5px',
+	},
+};
+theme.typography.subtitle1 = {
+	fontFamily: 'Poppins',
+	fontSize: "14px",
+	fontWeight: 500,
+	[theme.breakpoints.only('xs')]: {
+		fontSize: '10.5px',
+	},
+};
+theme.typography.subtitle2 = {
+	fontFamily: 'Poppins',
+	fontSize: "12px",
+	fontWeight: 500,
+	[theme.breakpoints.only('xs')]: {
+		fontSize: '9px',
+	},
+};
+theme.typography.body1 = {
+	fontFamily: 'Poppins',
+	fontSize: "14px",
+	fontWeight: 400,
+	[theme.breakpoints.only('xs')]: {
+		fontSize: '10.5px',
+	},
+};
+theme.typography.body2 = {
+	fontFamily: 'Poppins',
+	fontSize: "12px",
+	fontWeight: 400,
+	[theme.breakpoints.only('xs')]: {
+		fontSize: '9px',
+	},
+};
+
 
 root.render(
 	<React.StrictMode>

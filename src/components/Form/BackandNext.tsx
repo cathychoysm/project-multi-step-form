@@ -1,4 +1,4 @@
-import { Button, Stack } from "@mui/material";
+import { Button, Stack, useMediaQuery, useTheme } from "@mui/material";
 import { ReactElement } from "react";
 import { StepStateProps } from "./Form";
 
@@ -35,12 +35,18 @@ export default function BackandNext({ step, setStep, submitForm, values, touched
 	}
 
 	const StyledButton = ({ children, variant, visibility, disabled, onClick }: ButtonProps) => {
+		const theme = useTheme();
 		return (
 			<Button
 				variant={variant}
 				color='orange'
-				size="large"
-				sx={{ marginX: '20px', borderRadius: '10px', fontSize: '14px', visibility: visibility }}
+				size={useMediaQuery(theme.breakpoints.only("xs")) ? "medium" : "large"}
+				sx={{
+					marginX: '20px',
+					borderRadius: '10px',
+					fontSize: {xs: '10.5px', sm: '14px'},
+					visibility: visibility
+				}}
 				disabled={disabled}
 				onClick={onClick}
 			>
@@ -68,7 +74,7 @@ export default function BackandNext({ step, setStep, submitForm, values, touched
 					children="Next Step"
 					variant="contained"
 					visibility={(step < 4 ? 'visible' : 'hidden')}
-					disabled={!(step === 0? step0Validation : step1Validation)}
+					disabled={!(step === 0 ? step0Validation : step1Validation)}
 					onClick={handleNext} />
 			}
 		</Stack>
