@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/project-multi-step-form/static/css/main.f855e6bc.css",
+    "main.js": "/project-multi-step-form/static/js/main.9978d42b.js",
+    "static/js/787.1328501b.chunk.js": "/project-multi-step-form/static/js/787.1328501b.chunk.js",
+    "static/media/finished_icon.svg": "/project-multi-step-form/static/media/finished_icon.e6a957fc5dcf175830cb17cf1281c9ee.svg",
+    "static/media/expert_icon.svg": "/project-multi-step-form/static/media/expert_icon.62b1f354a39f2fef75f8b22472b43735.svg",
+    "static/media/advanced_icon.svg": "/project-multi-step-form/static/media/advanced_icon.ed927ca6a2f3f1b90f6ca9c40fb667f4.svg",
+    "index.html": "/project-multi-step-form/index.html",
+    "static/media/intermediate_icon.svg": "/project-multi-step-form/static/media/intermediate_icon.4f4b1e643aa854f2d0a40fd6108fc226.svg",
+    "static/media/beginner_icon.svg": "/project-multi-step-form/static/media/beginner_icon.51e1bd2ddceb84ee14d1051941d01814.svg",
+    "main.f855e6bc.css.map": "/project-multi-step-form/static/css/main.f855e6bc.css.map",
+    "main.9978d42b.js.map": "/project-multi-step-form/static/js/main.9978d42b.js.map",
+    "787.1328501b.chunk.js.map": "/project-multi-step-form/static/js/787.1328501b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.9978d42b.js"
+  ]
+}
